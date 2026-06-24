@@ -1,0 +1,113 @@
+/* DEFUALT STYLE */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/* SELECTION STYLE */
+::selection{
+color: aliceblue;
+background-color: #0164F2;
+}
+/* BODY STYLE */
+body{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/* FORM STYLE */
+form{
+    padding: 60px;
+    border-radius: 10px;
+    border: solid 2px #0164F2;
+    box-shadow: 1.5px 1.5px  #0164F2;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    text-align: center;
+    gap: 20px;
+    /* TITLE OF FORM  */
+    .title-form{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        width: 100%;
+        img{
+            width: 160px;
+            height: 140px;
+            object-fit: cover;
+        }
+        h1{
+            margin-bottom: 10px;
+        }
+        p{
+            color: rgb(169, 169, 169);
+        }
+    }
+/* INPUTS GROUP */
+.inputs-group {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    margin-bottom: 20px;
+
+    img {
+        width: 20px;
+        height: 20px;
+        object-fit: cover;
+    }
+
+    .email-input,.password-input,.full-name-input,.phone-number-input {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        width: 100%;
+        position: relative;
+
+        input {
+            padding: 10px 15px;
+            width: 300px;
+            border: 1px solid #0164F2;
+            border-radius: 10px;
+            outline: none;
+            padding-left: 36px;
+        }
+        img{
+            position: relative;
+            left: 25px;
+        }
+    }
+}
+/* SUBMIT BUTTON  */
+button{
+    padding: 16px;
+    background-color: #0164F2;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+button:hover{
+    background-color: #033377;
+}
+/* LOGIN LINK */
+.login-link{
+    font-size: large;
+    a{
+     color: #0164F2; 
+     font-weight: bold;  
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+}
+
+}
